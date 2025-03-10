@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShinAnime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <h1>ShinAnime</h1>
+    </header>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-logo">
+            <a href="#home">ShinAnime</a>
+        </div>
+        <div class="navbar-links">
+            <a href="#home">Home</a>
+            <a href="#top-rated-anime">Reviews</a>
+            <a href="#latest-news">Latest News</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="navbar-buttons">
+            <div id="userProfile">
+                <img id="profilePic" src="https://i.pinimg.com/474x/10/91/94/1091948c6b80b65b9eef8c163f0ae42a.jpg" alt="Profile Picture">
+                <div id="profileDropdown">
+                    <button onclick="logout()">Logout</button>
+                </div>
+            </div>
+            <div id="authButtons">
+                <button onclick="openLogin()">Login</button>
+                <button onclick="openSignup()">Signup</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Placeholder Section -->
+    <div class="placeholder-section">
+        <h2>Step into the World of Anime</h2>
+        <p>Explore the vibrant world of anime where captivating stories, unforgettable characters, and stunning visuals come to life. Your journey into the anime universe begins here! Dive into a realm of endless possibilities, where every frame tells a story, and every character leaves a lasting impression. Whether you're a seasoned fan or new to the genre, ShinAnime is your gateway to discovering the best anime has to offer.</p>
+        <button>TELL ME MORE</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Content -->
+        <div class="content">
+            <!-- Introduction Section -->
+            <div class="introduction">
+                <h2>Welcome to ShinAnime</h2>
+                <p>ShinAnime is your ultimate destination for all things anime. Whether you're a long-time fan or just starting your journey into the world of Japanese animation, we have something for everyone. Our platform is designed to bring you the latest news, reviews, and updates from the anime universe. From classic series to the newest releases, ShinAnime is here to guide you through the vast and exciting world of anime.</p>
+                <p>Anime has become a global phenomenon, captivating audiences with its unique storytelling, rich characters, and breathtaking visuals. At ShinAnime, we celebrate this art form by providing a space where fans can connect, share, and explore their favorite shows and movies. Our mission is to create a community that fosters a love for anime and supports the creators who bring these incredible stories to life.</p>
+                <p>Our team of dedicated anime enthusiasts works tirelessly to bring you the most accurate and up-to-date information. We cover everything from popular series like "Attack on Titan" and "My Hero Academia" to hidden gems that deserve more recognition. Whether you're looking for recommendations, news about upcoming releases, or in-depth reviews, ShinAnime has you covered.</p>
+                <p>Join us on this journey as we explore the endless possibilities of anime. From action-packed adventures to heartwarming slice-of-life stories, there's something for everyone. Let ShinAnime be your guide as you dive into the world of anime and discover new favorites along the way.</p>
+                <p>Thank you for visiting ShinAnime. We hope you enjoy your time here and find everything you're looking for. Don't forget to sign up and become a part of our growing community. Together, let's celebrate the magic of anime!</p>
+            </div>
+
+            <!-- Image Carousel -->
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="http://images6.fanpop.com/image/photos/36400000/Bleach-Anime-image-bleach-anime-36461821-1280-720.jpg" alt="Anime 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static.wixstatic.com/media/36bb8c_47c15fad6b1143b9a70baa1ff412d221~mv2.jpg/v1/fill/w_1000,h_532,al_c,q_85,usm_0.66_1.00_0.01/36bb8c_47c15fad6b1143b9a70baa1ff412d221~mv2.jpg" alt="Anime 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://staticg.sportskeeda.com/editor/2023/02/bb4c8-16768115468792-1920.jpg" alt="Anime 3">
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            <!-- Hidden Sections (Initially Hidden) -->
+            <div id="hiddenSections" class="hidden-section">
+                <!-- Upcoming Anime Section -->
+                <div class="upcoming-anime">
+                    <h2>UPCOMING ANIME</h2>
+                    <p>Get ready for the next wave of anime adventures! Discover upcoming releases, exclusive previews, and trailers straight from the studios. Stay ahead of the curve with the latest news in the anime world.</p>
+                    <div class="scrolling-gallery">
+                        <img src="https://animotaku.fr/wp-content/uploads/2022/12/anime-Mission-Yozakura-Family-annonce-2024.jpeg" alt="Upcoming Anime 1">
+                        <img src="https://pbs.twimg.com/media/FuyjjPracAEIP6R.jpg" alt="Upcoming Anime 2">
+                        <img src="https://pbs.twimg.com/media/FrQZB8NaYAUfLzV.jpg" alt="Upcoming Anime 3">
+                        <img src="https://pbs.twimg.com/media/FsDZfyDaUAIfYYh.jpg" alt="Upcoming Anime 4">
+                        <img src="https://pbs.twimg.com/media/Fxl0NL6WAAIMX-O.jpg" alt="Upcoming Anime 5">
+                    </div>
+                </div>
+
+                <!-- Top Rated Anime Section -->
+                <div id="top-rated-anime" class="top-rated-anime">
+                    <h2>TOP RATED ANIME</h2>
+                    <div class="anime-list">
+                        <!-- Anime Item 1 -->
+                        <div class="anime-item">
+                            <img src="https://cdn2.penguin.com.au/covers/original/9781612620244.jpg" alt="Attack on Titan">
+                            <div class="details">
+                                <h3>Attack on Titan</h3>
+                                <div class="rating">Rating: 9.0/10</div>
+                                <p>In a world where humanity resides within enormous walled cities to protect themselves from Titans, gigantic humanoid creatures, Eren Yeager vows to eradicate the Titans after they bring about the destruction of his hometown and the death of his mother.</p>
+                            </div>
+                        </div>
+                        <!-- Anime Item 2 -->
+                        <div class="anime-item">
+                            <img src="http://images6.fanpop.com/image/photos/36600000/Full-Metal-Alchemist-image-full-metal-alchemist-36621503-800-1130.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                            <div class="details">
+                                <h3>Fullmetal Alchemist: Brotherhood</h3>
+                                <div class="rating">Rating: 9.1/10</div>
+                                <p>Two brothers, Edward and Alphonse Elric, search for the Philosopher's Stone to restore their bodies after a failed attempt to bring their mother back to life using alchemy.</p>
+                            </div>
+                        </div>
+                        <!-- Anime Item 3 -->
+                        <div class="anime-item">
+                            <img src="https://media.senscritique.com/media/000017947429/source_big/Death_Note.jpg" alt="Death Note">
+                            <div class="details">
+                                <h3>Death Note</h3>
+                                <div class="rating">Rating: 8.9/10</div>
+                                <p>Light Yagami finds a supernatural notebook that grants him the power to kill anyone whose name he writes in it. He decides to use it to rid the world of criminals, but his actions are challenged by a mysterious detective known only as L.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Latest News Section -->
+                <div id="latest-news" class="latest-news">
+                    <h2>LATEST NEWS</h2>
+                    <div class="news-list">
+                        <!-- News Item 1 -->
+                        <div class="news-item">
+                            <h3>New Anime Adaptation Announced</h3>
+                            <p>Exciting news for anime fans! A new adaptation of the popular manga series "Blue Lock" has been announced. The anime is set to premiere in Fall 2023, and fans can't wait to see their favorite characters come to life on screen.</p>
+                        </div>
+                        <!-- News Item 2 -->
+                        <div class="news-item">
+                            <h3>Studio Ghibli Releases New Trailer</h3>
+                            <p>Studio Ghibli has just released a new trailer for their upcoming film, "The Boy and the Heron." The film is directed by Hayao Miyazaki and promises to be another masterpiece from the legendary studio.</p>
+                        </div>
+                        <!-- News Item 3 -->
+                        <div class="news-item">
+                            <h3>Crunchyroll Announces New Partnerships</h3>
+                            <p>Crunchyroll has announced new partnerships with several anime studios, ensuring that fans will have access to even more exclusive content in the coming months. Stay tuned for updates!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <h2 id="gallery">Gallery</h2>
+                <div class="gallery">
+                    <img src="https://down-id.img.susercontent.com/file/ad7966e201fbd0be3144c3fad5236b14" alt="Anime 1">
+                    <img src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/6/5/77cc6fb8-bec0-4c70-b489-295cdf17075b.jpg" alt="Anime 2">
+                    <img src="https://i.etsystatic.com/27275395/r/il/a41542/2824408622/il_fullxfull.2824408622_kosq.jpg" alt="Anime 3">
+                    <img src="http://www.animetowncreations.com/cdn/shop/products/ATWPOS0039_1.jpg?v=1620748140" alt="Anime 4">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-23020-f6nvq92rannv36" alt="Anime 5">
+                    <img src="https://i.etsystatic.com/28083504/r/il/4071ac/3066287930/il_fullxfull.3066287930_hehh.jpg" alt="Anime 6">
+                    <img src="https://i.etsystatic.com/27362471/r/il/85e415/3263853449/il_340x270.3263853449_30ks.jpg" alt="Anime 7">
+                    <img src="https://i.etsystatic.com/13636950/r/il/6cc649/3148265486/il_1588xN.3148265486_3e86.jpg" alt="Anime 8">
+                    <img src="https://i.etsystatic.com/28083504/r/il/b4fac5/3066287932/il_1588xN.3066287932_ktpc.jpg" alt="Anime 9">
+                    <img src="https://images6.fanpop.com/image/photos/33500000/KILLUA-killua-zoldyck-33568327-1024-768.jpg" alt="Anime 10">
+                </div>
+
+                <!-- Member Section -->
+                <h2>Top Members</h2>
+                <div class="members">
+                    <div class="member-card">
+                        <img src="acala.jpeg" alt="Member 1">
+                        <h3>Acala John Bryan</h3>
+                        <p>Member</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="aguilar.jpeg" alt="Member 2">
+                        <h3>Aguilar Justin Mikael</h3>
+                        <p>Admin</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="aldep.jpeg" alt="Member 3">
+                        <h3>Aldep John Aeron</h3>
+                        <p>Member</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="almajeda.jpeg" alt="Member 4">
+                        <h3>Almajeda Wesly</h3>
+                        <p>Moderator</p>
+                    </div>
+                    <div class="member-card">
+                        <img src="deleon.jpeg" alt="Member 5">
+                        <h3>De Leon Jexkhen Zhanjie</h3>
+                        <p>Member</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <p>Any questions or remarks? Just write us a message!</p>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email address" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#latest-news">News</a>
+            <a href="#top-rated-anime">Reviews</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p>© Copyright ShinAnime - All Rights Reserved</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLogin()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignup()">&times;</span>
+            <h2>Signup</h2>
+            <form id="signupForm">
+                <input type="text" id="signupUsername" placeholder="Username" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#" onclick="openTermsModal()">Terms</a> and <a href="#" onclick="openTermsModal()">Privacy Policy</a></label>
+                </div>
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Terms and Privacy Policy Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTermsModal()">&times;</span>
+            <h2>Terms and Privacy Policy</h2>
+            <p>Welcome to ShinAnime! By using our website, you agree to the following terms and conditions:</p>
+            <p><strong>1. Acceptance of Terms:</strong> By accessing or using ShinAnime, you agree to be bound by these Terms and our Privacy Policy.</p>
+            <p><strong>2. User Conduct:</strong> You agree to use ShinAnime only for lawful purposes and in a way that does not infringe the rights of others.</p>
+            <p><strong>3. Privacy Policy:</strong> We respect your privacy and are committed to protecting your personal information. Please read our Privacy Policy for more details.</p>
+            <p><strong>4. Changes to Terms:</strong> We reserve the right to modify these Terms at any time. Your continued use of ShinAnime constitutes acceptance of any changes.</p>
+            <p>If you have any questions, please contact us at <a href="mailto:info@shinanime.com">info@shinanime.com</a>.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
